@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Evaluate News Using NLP</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web interface which links Aylien api for sentiment analysis of news articles">
+        <meta name="author" content="Madhur Taneja">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">Sentiment Today</a>
+        </nav>
+        <main>
+            <form onsubmit="return Client.handleSubmitForAylien(event)">
+                <h2>Enter a News Article URL below</h2>
+                <div class="form">
+                    <input id="url" type="url" name="url" placeholder="Type in a valid URL">
+                    <input class="submit-button" type="submit" name="submit" value="Submit" onclick="return Client.handleSubmitForAylien(event)" onsubmit="return Client.handleSubmitForAylien(event)">
+                </div>
+            </form>
+
+            <section>
+                <h2>Output:</h2>
+                <br>
+                <div class="response-container" id="results">
+                    <div class="card-container">
+                        <h3>Polarity:</h3>
+                        <span class="response-value"><p id="polarity"></p></span>
+                    </div>
+                    <div class="card-container">
+                        <h3>Subjectivity:</h3>
+                        <span class="response-value"><p id="subjectivity"></p></span>
+                    </div>
+                    <div class="card-container">
+                        <h3>Polarity Confidence:</h3>
+                        <span class="response-value"><p id="polarity-confidence"></p></span>
+                    </div>
+                    <div class="card-container">
+                        <h3>Subjectivity Confidence:</h3>
+                        <span class="response-value"><p id="subjectivity-confidence"></p></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>OusStack - Udacity FEND - 2020</p>
+        </footer>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>
