@@ -159,6 +159,9 @@ For details now how these functionalities have been implemented, refer the sourc
 
 A great step to take with the finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
 
+i depploy my app on heroku visit it using this link : ( https://protected-savannah-98568.herokuapp.com ) .
+
+
 ## References
 
 * Webpack [Docs](https://webpack.js.org/concepts/)
