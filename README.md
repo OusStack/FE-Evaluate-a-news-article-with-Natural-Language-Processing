@@ -2,7 +2,7 @@
 
 A web tool/interface that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites by interacting with the NLP system of an exciting new api called [Aylien](https://aylien.com/)
 
-Open and view the Project using the `.zip` file provided or at my [Github Repository](https://github.com/madhur-taneja/Evaluate-News-With-NLP)
+Download and see the project from my repo file provided or at my [Github Repository](https://github.com/OusStack/FE-Evaluate-a-news-article-with-Natural-Language-Processing)
 
 ## Table of Contents
 - [Project Summary](#project-summary)
@@ -23,7 +23,7 @@ Open and view the Project using the `.zip` file provided or at my [Github Reposi
 
 ## Project Summary
 
-The goal of this project is to get a taste of the environments and tools that are most likely to be used in a front end role. The focus is to understand the role every tool and technology is playing in the overall architecture, but one shouldn’t feel the need to memorize the particular commands, config setups, or structure that we create here. Every company, and even every project, will have its own custom setup, but understanding the moving pieces will help to get the gist of even far more complicated projects than this one.
+The objective of this undertaking is to experience the situations and devices that are destined to be utilized in a front end job. The center is to comprehend the job each instrument and innovation is playing in the general engineering, yet one shouldn't want to retain the specific orders, config arrangements, or structure that we make here. Each organization, and even every undertaking, will have its own custom arrangement, however understanding the moving pieces will assist with getting the essence of even unquestionably more confused ventures than this one.
 
 Some of the concepts that are implemented:
 - Setting up Webpack
@@ -95,14 +95,14 @@ var textapi = new aylien({
 });
 ```
 
-...but there's a problem with this. We are about to put our personal API keys into a file, but when we push, this file is going to be available PUBLICLY on Github. Private keys, visible publicly are never a good thing. So, we have to figure out a way to make that not happen. The way we will do that is with environment variables. Environment variables are pretty much like normal variables in that they have a name and hold a value, but these variables only belong to your system and won't be visible when you push to a different environment like Github.
+...BUT, there's an issue with this. We are going to put our own API keys into a record, yet when we push, this document will be accessible PUBLICLY on Github. Private keys, noticeable openly are never something to be thankful for. In this way, we need to make sense of an approach to make that not occur. The manner in which we will do that is with environment variables. environment variables are practically similar to normal variables in that they have a name and hold value, however these variables only belong to your system and won't be visible when you push to a different environment like Github.
 
 - [ ] Use npm or yarn to install the dotenv package ```npm install dotenv```. This will allow us to use environment variables we set in a new file
 - [ ] Create a new ```.env``` file in the root of your project
 - [ ] Go to your .gitignore file and add ```.env``` - this will make sure that we don't push our environment variables to Github! If you forget this step, all of the work we did to protect our API keys was pointless.
 - [ ] Fill the .env file with your API keys like this:
   ```
-  API_ID=**************************
+  API_ID=*********
   API_KEY=**************************
   ```
 - [ ] Add this code to the very top of your server/index.js file:
@@ -129,8 +129,6 @@ var textapi = new aylien({
 #### Step 5: Using the API
 
 We're ready to go! The API has a lot of different endpoints you can take a look at [here](https://docs.aylien.com/textapi/endpoints/#api-endpoints). And you can see how using the SDK simplifies the requests we need to make. 
-
-I won't provide further examples here, as it's up to you to create the various requests and make sure your server is set up appropriately.
 
 ### After the API Setup
 
