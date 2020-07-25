@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 var aylien = require("aylien_textapi");
 
 const dotenv = require('dotenv');
+console.log(process.env);
 dotenv.config();
 
 //Variables
