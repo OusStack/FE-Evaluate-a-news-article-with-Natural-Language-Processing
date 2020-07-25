@@ -1,4 +1,4 @@
-# Evaluate a News Article with NLP
+# Evaluate a news article with Natural Language Processing
 
 A web tool/interface that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites by interacting with the NLP system of an exciting new api called [Aylien](https://aylien.com/)
 
