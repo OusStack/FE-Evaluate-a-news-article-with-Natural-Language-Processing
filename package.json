@@ -14,7 +14,7 @@
   "description": "Udacity's FEND Refreshed Project 4",
   "dependencies": {
     "aylien_textapi": "^0.7.0",
-    "body-parser": "^1.20.8",
+    "body-parser": "^1.20.9",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.22.3",
